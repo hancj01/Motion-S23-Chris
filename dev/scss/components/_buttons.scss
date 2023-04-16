@@ -1,3 +1,22 @@
 /* =============
     Buttons
 ============= */
+button {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dkbrown);
+    border: .5px;
+    border-color: var(--ltbrown);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--white);
+
+    &:hover {
+        color: black;
+        cursor: pointer;
+        background-color: var(--tan);
+    }
+}

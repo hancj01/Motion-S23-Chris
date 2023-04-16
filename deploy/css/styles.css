@@ -14,7 +14,9 @@ html {
   --white: #fff;
   --black: #000;
   --blue: #061928;
-  --purple: #A97DA2;
+  --ltbrown: #bc8754;
+  --dkbrown: #724a25;
+  --tan: #ebcbad;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -335,6 +337,25 @@ template {
 /* =============
     Buttons
 ============= */
+button {
+  font-family: "Inter", sans-serif;
+  background-color: var(--dkbrown);
+  border: 0.5px;
+  border-color: var(--ltbrown);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--white);
+}
+button:hover {
+  color: black;
+  cursor: pointer;
+  background-color: var(--tan);
+}
+
 /* =============
     Forms
 ============= */
@@ -360,6 +381,7 @@ nav {
   height: 100%;
 }
 nav ul {
+  color: var(--white);
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -370,15 +392,18 @@ nav ul {
 nav ul li {
   margin-left: 4vw;
 }
-nav ul li a:link, nav ul li a:visited {
-  font-family: "Roboto Slab", serif;
+nav ul li a:link,
+nav ul li a:visited {
+  font-family: "Inter", sans-serif;
   color: var(--blue);
   transition: 0.25s;
   font-size: 1.125rem;
   font-weight: 300;
 }
-nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
-  color: var(--purple);
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
+  color: var(--dkbrown);
 }
 
 /* =============
@@ -386,7 +411,7 @@ nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav 
 ============= */
 header {
   position: fixed;
-  background-color: var(--white);
+  background-color: var(--ltbrown);
   width: 100%;
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
   z-index: 100;
@@ -406,6 +431,7 @@ header > div aside a {
 #hero {
   height: 90vh;
   width: 100%;
+  background-color: var(--tan);
 }
 @media (min-width: 1200px) {
   #hero {
@@ -437,11 +463,13 @@ header > div aside a {
   text-align: center;
 }
 #hero article #hero-content h1 {
-  font-size: 5rem;
-  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  font-size: 9.375rem;
+  font-weight: 500;
   line-height: 117px;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 0;
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) {
   #hero article #hero-content h1 {
@@ -454,10 +482,11 @@ header > div aside a {
   }
 }
 #hero article #hero-content h2 {
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 47px;
-  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   margin-top: -25px;
 }
 @media (min-width: 768px) {
@@ -478,6 +507,7 @@ header > div aside a {
   grid-template-columns: auto 90% auto;
   grid-template-areas: ". content .";
   padding: 64px 0;
+  background-color: var(--tan);
 }
 @media (min-width: 768px) {
   #content {
