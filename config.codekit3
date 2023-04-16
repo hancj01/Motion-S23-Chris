@@ -39,7 +39,7 @@
     },
     "\/deploy\/img\/hero.png" : {
       "ft" : 32768,
-      "iS" : 663006,
+      "iS" : 750390,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero.png",
       "oF" : 0,
@@ -348,6 +348,12 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
