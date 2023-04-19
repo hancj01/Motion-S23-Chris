@@ -60,6 +60,9 @@
                 text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
                 margin-top: -25px;
 
+                color: var(--white);
+                ;
+
                 @include md {
                     font-size: rem-cal(40);
                     margin-top: -20px;

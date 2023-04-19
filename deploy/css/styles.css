@@ -13,7 +13,6 @@ html {
 :root {
   --white: #fff;
   --black: #000;
-  --blue: #061928;
   --ltbrown: #bc8754;
   --dkbrown: #724a25;
   --tan: #ebcbad;
@@ -339,6 +338,7 @@ template {
 ============= */
 button {
   font-family: "Inter", sans-serif;
+  font-size: 20px;
   background-color: var(--dkbrown);
   border: 0.5px;
   border-color: var(--ltbrown);
@@ -488,6 +488,7 @@ header > div aside a {
   line-height: 47px;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   margin-top: -25px;
+  color: var(--white);
 }
 @media (min-width: 768px) {
   #hero article #hero-content h2 {
@@ -509,7 +510,7 @@ header > div aside a {
   padding: 64px 0;
   background-color: var(--tan);
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #content {
     padding: 100px 0;
     grid-template-columns: auto 80% auto;
@@ -521,7 +522,7 @@ header > div aside a {
     grid-template-columns: auto 80% auto;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #content {
     grid-template-columns: auto 1440px auto;
   }
@@ -535,10 +536,16 @@ header > div aside a {
   }
 }
 #content > div h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--dkbrown);
   font-size: 2.1875rem;
   margin-bottom: 10px;
 }
 #content > div p {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  color: var(--ltbrown);
   font-size: 1.125rem;
   line-height: 1.875rem;
   text-align: justify;
