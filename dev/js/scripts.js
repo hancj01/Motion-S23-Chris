@@ -1,16 +1,18 @@
 import { gsap } from "gsap";
 
 gsap.from("#logo", {
-    duration: 1,
-    alpha: 0,
-    delay: 0.5
+    duration: 4,
+    alpha: 0
+    
 });
 
 gsap.from("nav li", {
-    duration: 1,
-    alpha: 0,
-    y: "-=25"
+  duration: 1,
+  alpha: 0,
+  y: "-=25",
+  delay: 1
 });
+
 gsap.from("#hero article", {
     duration: 1.5,
     alpha: 0,
@@ -52,7 +54,7 @@ gsap.to("#bread", {
   }
 });
 
-gsap.to("button", {duration:.5, rotation:"720_cw", delay:1.5})
+gsap.to("button", {duration:.5, rotation:"720_cw", delay:2})
 
 //# is for id name 
 //. is for class
