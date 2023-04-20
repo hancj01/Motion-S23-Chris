@@ -52,7 +52,7 @@ gsap.to("#bread", {
   }
 });
 
-gsap.to("button", {duration:1, rotation:"360_cw", delay:1.5})
+gsap.to("button", {duration:.5, rotation:"720_cw", delay:1.5})
 
 //# is for id name 
 //. is for class
