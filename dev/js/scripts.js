@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 
 gsap.from("#logo", {
-    duration: 4,
+    duration: 3,
     alpha: 0
     
 });
