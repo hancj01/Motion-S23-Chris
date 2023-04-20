@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "2D98CC5F-45F9-46F2-8AEF-2F553619B0BE"
+      "uuidString" : "E59487D0-AB9A-4F1B-92B0-D51C6633F6A2"
     }
   ],
   "creatorBuild" : "34472",
@@ -53,11 +53,11 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
-      "q" : 100,
+      "q" : 90,
       "rq" : 75
     },
     "\/deploy\/index.html" : {
@@ -406,12 +406,12 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 669227926.75338697,
+    "creationDate" : 703644118.65298402,
     "displayValue" : "Motion-S23-Chris",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-ucla",
+    "iconImageName" : "brackets-peach",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 702951282.61023402
+    "lastBuiltDate" : 703644274.44207597
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -834,7 +834,7 @@
         "optionString" : "'always', {'null': 'always'}"
       },
       "for-direction" : {
-        "active" : 0
+        "active" : 1
       },
       "func-call-spacing" : {
         "active" : 0,
@@ -865,7 +865,7 @@
         "optionString" : "{'before': true, 'after': false}"
       },
       "getter-return" : {
-        "active" : 0,
+        "active" : 1,
         "optionString" : "{'allowImplicit': false}"
       },
       "grouped-accessor-pairs" : {
@@ -994,7 +994,7 @@
         "active" : 0
       },
       "no-async-promise-executor" : {
-        "active" : 0
+        "active" : 1
       },
       "no-await-in-loop" : {
         "active" : 0
@@ -1013,7 +1013,7 @@
         "active" : 1
       },
       "no-compare-neg-zero" : {
-        "active" : 0
+        "active" : 1
       },
       "no-cond-assign" : {
         "active" : 1,
@@ -1021,10 +1021,10 @@
       },
       "no-confusing-arrow" : {
         "active" : 0,
-        "optionString" : "{'allowParens': true}"
+        "optionString" : "{'allowParens': true, 'onlyOneSimpleParam': false}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
@@ -1119,7 +1119,7 @@
       },
       "no-extra-parens" : {
         "active" : 0,
-        "optionString" : "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false, 'enforceForSequenceExpressions': false, 'enforceForNewInMemberExpressions': false}"
+        "optionString" : "'all'"
       },
       "no-extra-semi" : {
         "active" : 1
@@ -1194,17 +1194,17 @@
       },
       "no-magic-numbers" : {
         "active" : 0,
-        "optionString" : "{'ignore': [], 'ignoreArrayIndexes': true, 'ignoreDefaultValues': false, 'enforceConst': false, 'detectObjects': false}"
+        "optionString" : "{'ignore': [], 'ignoreArrayIndexes': true, 'ignoreDefaultValues': false, 'ignoreClassFieldInitialValues': false, 'enforceConst': false, 'detectObjects': false}"
       },
       "no-misleading-character-class" : {
-        "active" : 0
+        "active" : 1
       },
       "no-mixed-operators" : {
         "active" : 0,
         "optionString" : "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
       },
       "no-mixed-spaces-and-tabs" : {
-        "active" : 0,
+        "active" : 1,
         "optionString" : ""
       },
       "no-multi-assign" : {
@@ -1273,7 +1273,7 @@
         "active" : 0
       },
       "no-prototype-builtins" : {
-        "active" : 0
+        "active" : 1
       },
       "no-redeclare" : {
         "active" : 1,
@@ -1328,10 +1328,10 @@
       },
       "no-shadow" : {
         "active" : 0,
-        "optionString" : "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+        "optionString" : "{'builtinGlobals': false, 'hoist': 'functions', 'allow': [], 'ignoreOnInitialization': false}"
       },
       "no-shadow-restricted-names" : {
-        "active" : 0
+        "active" : 1
       },
       "no-sparse-arrays" : {
         "active" : 1
@@ -1368,7 +1368,7 @@
       },
       "no-underscore-dangle" : {
         "active" : 0,
-        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false, 'allowFunctionParams': true}"
+        "optionString" : "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'allowAfterThisConstructor': false, 'enforceInMethodNames': false, 'enforceInClassFields': false, 'allowFunctionParams': true}"
       },
       "no-unexpected-multiline" : {
         "active" : 1
@@ -1414,7 +1414,7 @@
       },
       "no-use-before-define" : {
         "active" : 0,
-        "optionString" : "{'functions': true, 'classes': true, 'variables': true}"
+        "optionString" : "{'functions': true, 'classes': true, 'variables': true, 'allowNamedExports': false}"
       },
       "no-useless-backreference" : {
         "active" : 1
@@ -1423,7 +1423,7 @@
         "active" : 0
       },
       "no-useless-catch" : {
-        "active" : 0
+        "active" : 1
       },
       "no-useless-computed-key" : {
         "active" : 0,
@@ -1436,7 +1436,7 @@
         "active" : 0
       },
       "no-useless-escape" : {
-        "active" : 0
+        "active" : 1
       },
       "no-useless-rename" : {
         "active" : 0,
@@ -1460,7 +1460,7 @@
         "active" : 0
       },
       "no-with" : {
-        "active" : 0
+        "active" : 1
       },
       "nonblock-statement-body-position" : {
         "active" : 0,
@@ -1595,7 +1595,7 @@
       },
       "sort-keys" : {
         "active" : 0,
-        "optionString" : "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
+        "optionString" : "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2, 'allowLineSeparatedGroups': false}"
       },
       "sort-vars" : {
         "active" : 0,
@@ -1836,7 +1836,7 @@
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
       "optimizerType" : 1,
-      "quality" : 100,
+      "quality" : 90,
       "webpOptimizationPresetUUID" : "lpckwebp-none",
       "webpRGBQuality" : 75
     },
