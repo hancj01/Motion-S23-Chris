@@ -25,7 +25,8 @@ mainTl.from("#logo", {
     let tl = gsap.timeline({delay:1});
     let mm = gsap.matchMedia();
 
-  mm.add("(max-width: 767px)", () =>{
+
+    mm.add("(max-width: 767px)", () =>{
     tl.to("#agape", { 
       duration: 1,
       x: '50%',
