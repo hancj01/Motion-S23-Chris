@@ -20,31 +20,87 @@ mainTl.from("#logo", {
   }, "<");
 
 
-function heroAnimation(){
-  let tl = gsap.timeline();
+  function heroAnimation(){
+    let tl = gsap.timeline({delay:1});
+  
+   tl.to("#agape", { 
+      duration: 1.5,
+      x: '50%',
+      autoAlpha: 1,
+      ease: 'power3.out'
+    })
 
-  tl.to("#agape", { 
-    duration: 1.5,
-    x: '0%',
-    autoAlpha: 1,
-    ease: 'power3.out'})
+      .to("#bread", {
+      duration: 1.5,
+      x: '-50%',
+      autoAlpha: 1,
+      ease: 'power3.out'
+    }, 0)
 
     .to("#agape", {
-    duration: 0.75,
-    x: '50%',
-    autoAlpha: 1,
-    ease: 'power3.out',
-    onComplete: function() {
-      gsap.to("#agape", {
-        duration: 0.90,
-        x: '0%',
-        ease: 'power3.out'})
-      }
-    });
-    return tl;
-}
+      duration: 0.90,
+      x: '0%',
+      ease: 'power3.out'
+    })
 
-heroAnimation();
+    .to("#bread", {
+      duration: 0.90,
+      x: '0%',
+      ease: 'power3.out'
+    }, "<")
+    
+    .to("button", {duration:.5, rotation:"720_cw"})
+   
+    ;
+  
+    return tl;
+  }
+  
+  heroAnimation();
+
+// function heroAnimation(){
+//   let tl = gsap.timeline();
+
+//   tl.to("#agape", { 
+//     duration: 1.5,
+//     x: '0%',
+//     autoAlpha: 1,
+//     ease: 'power3.out'})
+
+//     .to("#agape", {
+//     duration: 0.75,
+//     x: '50%',
+//     autoAlpha: 1,
+//     ease: 'power3.out',
+//     onComplete: function() {
+//       gsap.to("#agape", {
+//         duration: 0.90,
+//         x: '0%',
+//         ease: 'power3.out'})
+//       }
+//     }, 0)
+
+//     //#agape is glitching back for some reason...
+    
+//     .to("#bread", {
+//       duration: 0.75,
+//       x: '-50%',
+//       autoAlpha: 1,
+//       ease: 'power3.out',
+//       onComplete: function() {
+//         gsap.to("#bread", {
+//           duration: 0.90,
+//           x: '0%',
+//           ease: 'power3.out'
+//         });
+//       }
+//     }, 0)
+
+//     ;
+//     return tl;
+// }
+
+
 
 // mainTl.from("#logo", {duration:3, alpha: 0})
 //   .addLabel("beginning")
