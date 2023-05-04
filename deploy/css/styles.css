@@ -369,11 +369,11 @@ textarea {
     Footer
 ============= */
 #section-1 {
-  background-color: var(--aqua);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/hero.png");
 }
 
 #section-2 {
@@ -382,7 +382,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/hero.jpg");
   background-size: cover;
 }
 #section-2 #box {
