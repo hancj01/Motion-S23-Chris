@@ -6,10 +6,39 @@
     align-items: center;
     background-size: cover;
 
-    // #box{
-    //     height: 100px;
-    //     width: 100px;
-    //     background-color: var(--red);
-    //     border: 3px solid var(--white);
-    // }
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: rem-calc(60);
+        font-weight: bold;
+        line-height: 47px;
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+        margin-top: -25px;
+        justify-content: left;
+        margin-left: 30px;
+
+        color: var(--white);
+        ;
+
+        @include md {
+            font-size: rem-cal(40);
+            margin-top: -20px;
+        }
+
+        @include lg {
+            font-size: rem-cal(40);
+            margin-top: -15px;
+        }
+    }
+
+    	p {
+		font-family: 'Inter', sans-serif;
+		font-weight: regular;
+		color: var(--ltbrown);
+		font-size: rem-calc(30);
+		line-height: rem-calc(30);
+		text-align: left;
+        justify-content: left;
+        margin-left: 30px;
+
+    }
 }

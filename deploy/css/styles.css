@@ -443,6 +443,39 @@ header div aside a {
   align-items: center;
   background-size: cover;
 }
+#section-2 h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3.75rem;
+  font-weight: bold;
+  line-height: 47px;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-top: -25px;
+  justify-content: left;
+  margin-left: 30px;
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  #section-2 h1 {
+    font-size: rem-cal(40);
+    margin-top: -20px;
+  }
+}
+@media (min-width: 1024px) {
+  #section-2 h1 {
+    font-size: rem-cal(40);
+    margin-top: -15px;
+  }
+}
+#section-2 p {
+  font-family: "Inter", sans-serif;
+  font-weight: regular;
+  color: var(--ltbrown);
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  text-align: left;
+  justify-content: left;
+  margin-left: 30px;
+}
 
 #section-3 {
   background-color: var(--tan);
