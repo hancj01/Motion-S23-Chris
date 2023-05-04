@@ -1,7 +1,8 @@
 #section-1{
-    background-color: var(--aqua);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/hero.png"); 
+    // background-color: var(--aqua);
 }
