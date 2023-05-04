@@ -1,7 +1,25 @@
 #section-3 {
-	background-color: var(--yellow);
+	background-color: var(--tan);
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	h1 {
+		font-family: 'Inter', sans-serif;
+		font-weight: 400;
+		color: var(--dkbrown);
+		font-size: rem-calc(35);
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-family: 'Inter', sans-serif;
+		font-weight: 200;
+		color: var(--ltbrown);
+		font-size: rem-calc(18);
+		line-height: rem-calc(30);
+		text-align: justify;
+	}
+
 }

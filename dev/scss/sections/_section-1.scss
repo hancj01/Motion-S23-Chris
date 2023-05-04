@@ -4,5 +4,51 @@
     justify-content: center;
     align-items: center;
     background-image: url("../img/hero.png");
-    // background-color: var(--tan);
+    background-size: cover;
+    background-color: var(--tan);
+
+    color: var(--white);
+    ;
+    text-align: center;
+
+    h1 {
+        font-family: 'Inter', sans-serif;
+        font-size: rem-calc(150);
+        font-weight: 500;
+        line-height: 117px;
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+        margin: 0;
+        padding-bottom: 30px;
+
+        @include md {
+            font-size: rem-cal(90);
+        }
+
+        @include lg {
+            font-size: rem-cal(100);
+        }
+    }
+
+    h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: rem-calc(32);
+        font-weight: 300;
+        line-height: 47px;
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+        margin-top: -25px;
+
+        color: var(--white);
+        ;
+
+        @include md {
+            font-size: rem-cal(40);
+            margin-top: -20px;
+        }
+
+        @include lg {
+            font-size: rem-cal(40);
+            margin-top: -15px;
+        }
+    }
+
 }
