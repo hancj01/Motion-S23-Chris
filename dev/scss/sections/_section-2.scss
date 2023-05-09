@@ -5,6 +5,15 @@
     justify-content: center;
     align-items: center;
     background-size: cover;
+    border: 24px solid var(--dkbrown);
+
+    @include md {
+        border: 48px solid var(--dkbrown);
+    }
+
+    @include lg {
+        border: 64px solid var(--dkbrown);
+    }
 
     h1 {
         font-family: 'Inter', sans-serif;

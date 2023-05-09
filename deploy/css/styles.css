@@ -442,6 +442,17 @@ header div aside a {
   justify-content: center;
   align-items: center;
   background-size: cover;
+  border: 24px solid var(--dkbrown);
+}
+@media (min-width: 768px) {
+  #section-2 {
+    border: 48px solid var(--dkbrown);
+  }
+}
+@media (min-width: 1024px) {
+  #section-2 {
+    border: 64px solid var(--dkbrown);
+  }
 }
 #section-2 h1 {
   font-family: "Inter", sans-serif;
