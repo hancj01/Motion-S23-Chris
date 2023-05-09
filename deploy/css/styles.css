@@ -478,48 +478,66 @@ header div aside a {
 }
 
 #section-3 {
-  background-color: var(--tan);
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". contact .";
+  margin: 24px 0;
+}
+@media (min-width: 768px) {
+  #section-3 {
+    grid-template-columns: auto 90vw auto;
+    margin: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #section-3 {
+    grid-template-columns: auto 80vw auto;
+    margin: 64px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #section-3 {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#section-3 > div {
+  grid-area: contact;
+}
+@media (min-width: 768px) {
+  #section-3 > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#section-3 > div section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px;
 }
-#section-3 .contact-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-  padding: 50px;
-  text-align: center;
-}
-#section-3 .contact-icon {
-  grid-row: 1/span 2;
-  justify-self: center;
-}
-#section-3 .contact-icon img {
-  width: 100%;
-  max-width: 100px;
-}
-#section-3 .contact-details {
-  background-color: var(--dkbrown);
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  text-align: left;
-}
-#section-3 .contact-details h2 {
-  font-family: "Inter", sans-serif;
+#section-3 > div section h2 {
   font-weight: 400;
-  color: var(--white);
-  font-size: 4.375rem;
-  text-align: justify;
-  margin-bottom: 10px;
-}
-#section-3 .contact-details p {
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
+  font-size: 5rem;
   color: var(--ltbrown);
+  font-weight: bold;
+}
+#section-3 > div section p {
+  color: var(--dkbrown);
   font-size: 1.875rem;
-  line-height: 1.875rem;
-  margin-bottom: 0;
-  text-align: justify;
+}
+#section-3 > div aside {
+  height: 100vh;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  #section-3 > div aside {
+    height: 70vh;
+  }
+}
+#section-3 > div aside div {
+  background-image: url("../img/contact.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
 }
