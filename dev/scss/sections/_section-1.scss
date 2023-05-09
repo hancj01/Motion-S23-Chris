@@ -1,6 +1,7 @@
 #section-1{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("../img/hero.png");
@@ -18,7 +19,7 @@
         line-height: 117px;
         text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
         margin: 0;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
 
         @include md {
             font-size: rem-cal(90);
@@ -31,12 +32,12 @@
 
     h2 {
         font-family: 'Inter', sans-serif;
-        font-size: rem-calc(32);
+        font-size: rem-calc(40);
         font-weight: 300;
         line-height: 47px;
         text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
-        margin-top: -25px;
-
+        margin-bottom: -25px;
+        display: block;
         color: var(--white);
         ;
 
