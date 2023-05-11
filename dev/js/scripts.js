@@ -60,7 +60,7 @@ function contacttxtAnimation() {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#section-3",
-        start: "20% 51%",
+        start: "top 51%",
         end: "80% 80%%",
         scrub: true,
         markers: true,
