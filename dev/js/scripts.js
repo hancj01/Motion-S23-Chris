@@ -9,14 +9,19 @@ gsap.timeline()
 function heroAnimation(){
     let tl = gsap.timeline({
         scrollTrigger:{
-            trigger: "#cookies",
-            start:"top 0%",
-            end:"bottom 50%",
+            trigger: "#section-1 h1",
+            start:"top 50%",
+            end:"bottom 40%",
+
+        //start:"top 50%",
+        //top/bottom targets the element markers
+        //percentage targets the viewport markers
             scrub: true,
-            markers:true
+            markers:true,
+            toggleActions: "play none"
         }});
     
-        tl.from("#cookies",{duration:5, alpha:0.5, y:300});
+        tl.from("#section-1 h1, #section-1 h2",{duration:1, alpha:0, y:100});
         return tl;
 
 

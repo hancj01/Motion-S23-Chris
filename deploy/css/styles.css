@@ -392,8 +392,6 @@ header div aside a {
   background-color: var(--tan);
   color: var(--white);
   text-align: center;
-}
-#section-1 #cookies {
   background-image: url("../img/hero.png");
   background-size: cover;
 }

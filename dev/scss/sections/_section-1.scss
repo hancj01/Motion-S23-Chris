@@ -1,5 +1,4 @@
 #section-1{
-
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,11 +7,9 @@
     background-color: var(--tan);
     color: var(--white);
     text-align: center;
+    background-image: url("../img/hero.png");
+    background-size: cover;
 
-    #cookies{
-        background-image: url("../img/hero.png");
-        background-size: cover;
-    }
 
 
     h1 {
