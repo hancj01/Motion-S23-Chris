@@ -69,7 +69,7 @@ function contacttxtAnimation() {
     });
     
 
-       tl.from("#section-3 h2, #section-3 p", { rotation: 15, duration:5, ease: "elastic.out(3, .2)" });
+       tl.to("#section-3 h2, #section-3 p", { rotation: 15, duration:0.5, ease: "power1.inOut", yoyo: true, repeat: 5 });
     return tl;
   
    
