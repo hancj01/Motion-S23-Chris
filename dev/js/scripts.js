@@ -12,10 +12,6 @@ function heroAnimation(){
             trigger: "#section-1 h1",
             start:"top 51%",
             end:"center 40%",
-
-        //start:"top 50%",
-        //top/bottom targets the element markers
-        //percentage targets the viewport markers
             scrub: true,
             markers:false,
             toggleActions: "play none none pause"
@@ -33,10 +29,6 @@ function aboutAnimation(){
             trigger: "#section-2",
             start:"top 51%",
             end:"center 40%",
-
-        //start:"top 50%",
-        //top/bottom targets the element markers
-        //percentage targets the viewport markers
             scrub: true,
             markers:false,
             toggleActions: "play none none pause"
@@ -54,10 +46,6 @@ function aboutinfoAnimation(){
             trigger: "#section-2 h1",
             start:"top 51%",
             end:"center 40%",
-
-        //start:"top 50%",
-        //top/bottom targets the element markers
-        //percentage targets the viewport markers
             scrub: true,
             markers:false,
             toggleActions: "play none none pause"
@@ -84,7 +72,7 @@ function contacttxtAnimation() {
        tl.from("#section-3 h2, #section-3 p", { rotation: 15, duration:5, ease: "elastic.out(3, .2)" });
     return tl;
   
-    // { rotation: -20}, {rotation: 0,ease:Elastic. easeOut.config( 5, 0.2)});
+   
   }
   
 
@@ -94,3 +82,16 @@ mainTl.add(heroAnimation())
 .add(aboutinfoAnimation())
 .add(contacttxtAnimation)
     ;
+
+
+
+
+
+//extrasss
+
+//scrltrig
+    //top/bottom targets the element markers
+    //percentage targets the viewport markers
+
+
+// { rotation: -20}, {rotation: 0,ease:Elastic. easeOut.config( 5, 0.2)});
