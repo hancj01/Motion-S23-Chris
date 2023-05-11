@@ -63,8 +63,7 @@ function contacttxtAnimation() {
         start: "top 51%",
         end: "80% 80%%",
         scrub: true,
-        markers: true,
-        toggleActions: "play none none pause"
+        markers: false
       }
     });
     
