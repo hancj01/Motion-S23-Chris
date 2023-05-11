@@ -389,11 +389,13 @@ header div aside a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/hero.png");
-  background-size: cover;
   background-color: var(--tan);
   color: var(--white);
   text-align: center;
+}
+#section-1 #cookies {
+  background-image: url("../img/hero.png");
+  background-size: cover;
 }
 #section-1 h1 {
   font-family: "Inter", sans-serif;

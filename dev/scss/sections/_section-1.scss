@@ -1,16 +1,19 @@
 #section-1{
+
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/hero.png");
-    background-size: cover;
     background-color: var(--tan);
-
     color: var(--white);
-    ;
     text-align: center;
+
+    #cookies{
+        background-image: url("../img/hero.png");
+        background-size: cover;
+    }
+
 
     h1 {
         font-family: 'Inter', sans-serif;
