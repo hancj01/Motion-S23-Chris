@@ -13,8 +13,8 @@ function heroAnimation(){
             start:"top 51%",
             end:"center 40%",
             scrub: true,
-            markers:false,
-            toggleActions: "play none none pause"
+            markers:false
+            // toggleActions: "play none none pause"
         }});
     
         tl.from("#section-1 h1, #section-1 h2",{duration:1, alpha:0, y:100});
@@ -30,8 +30,8 @@ function aboutAnimation(){
             start:"top 51%",
             end:"center 40%",
             scrub: true,
-            markers:false,
-            toggleActions: "play none none pause"
+            markers:false
+            // toggleActions: "play none none pause"
         }});
     
         tl.from("#section-2 h1",{duration:1, alpha:0, x:100});
@@ -47,8 +47,8 @@ function aboutinfoAnimation(){
             start:"top 51%",
             end:"center 40%",
             scrub: true,
-            markers:false,
-            toggleActions: "play none none pause"
+            markers:false
+            // toggleActions: "play none none pause"
         }});
     
         tl.from("#section-2 p",{duration:1, alpha:0, x:-100});
