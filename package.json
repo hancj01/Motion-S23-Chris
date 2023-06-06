@@ -6,5 +6,8 @@
   "author": "",
   "license": "UNLICENSED",
   "repository": {},
-  "private": true
+  "private": true,
+  "dependencies": {
+    "gsap": "file:gsap-bonus.tgz"
+  }
 }
