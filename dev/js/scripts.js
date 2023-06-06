@@ -13,7 +13,7 @@ function blocksAnimation(){
     let tl = gsap.timeline();
 
     //entire logo comes down
-    tl.from("#soho", {duration:1, y:"-=500", ease: "expo.out"});
+    tl.from("#soho", {duration:1, y:"-=900", ease: "expo.out"});
 
     //blocks split
     tl.from("#o-1", {duration:0.5, x: "-=175", ease: "none" }, "move")
@@ -28,8 +28,6 @@ function blocksAnimation(){
     tl.from("#bottom-h-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "bottom" }, "grow+=0.5")    
 
 
-
-
     return tl;
 }
 
@@ -39,7 +37,7 @@ function splitAnimation(){
     tl.from("#redefine", {duration:0.3, x: "-=400", ease: "none"}, "split+=0.5");
     
     //soho moves to the left
-    tl.from("#soho", {duration:0.3, x: "+=175", ease: "none" }, "split+=0.5")
+    tl.from("#soho", {duration:0.3, x: 150, ease: "none" }, "split+=0.5")
 
     return tl;
 }

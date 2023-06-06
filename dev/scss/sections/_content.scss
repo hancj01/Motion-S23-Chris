@@ -1,6 +1,5 @@
 #content{
     
-    background-color: #FED701;
     display: grid;
     grid-template-columns: auto 50% auto;
     grid-template-areas: 
@@ -15,6 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #FED701;
         
 
         svg{
