@@ -11,20 +11,21 @@ function glassesAnimation(){
     let tl = gsap.timeline();
 
     //glasses are drawn
-    tl.from("#green-oval", {drawSVG:"0%", duration: 1, ease: "none", transformOrigin: "top"}, "draw");
+    tl.from("#green-oval", {drawSVG:"0%", duration: 1, ease: "none", transformOrigin: "100% 50%"}, "draw");
     tl.from("#blue-circle", {drawSVG:"0%", duration: 1, ease: "none", transformOrigin: "top"}, "draw");
 
-    //
-
+    //glasses arms are drawn
+    tl.from("#green-arm", {drawSVG:"0%", duration: 0.7, ease: "none", transformOrigin: "left"}, "draw2");
+    tl.from("#blue-arm", {drawSVG:"0%", duration: 0.7, ease: "none", transformOrigin: "right"}, "draw2");
     return tl;
 }
 
 function faceAnimation(){
     let tl = gsap.timeline();
 
-    //glasses are drawn
-    tl.from("#right-eye", {duration: 2, scaleX:0, ease: "elastic.out", transformOrigin: "center"}, "open");
-    tl.from("#left-eye", {duration: 2, scaleX:0, ease: "elastic.out", transformOrigin: "center"}, "open");
+    //eyes appear
+    tl.from("#right-eye", {duration: 2, scaleY:0, ease: "elastic.out", transformOrigin: "center"}, "open");
+    tl.from("#left-eye", {duration: 2, scaleY:0, ease: "elastic.out", transformOrigin: "center"}, "open");
 
     return tl;
 }
