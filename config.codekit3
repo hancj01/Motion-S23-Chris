@@ -48,6 +48,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/content\/svg.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/svg.html",
+      "oF" : 0
+    },
     "\/dev\/content\/svg.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -317,7 +325,7 @@
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
     "displayValue" : "Motion-S23-Chris",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0,
     "lastBuiltDate" : 702951282.61023402
