@@ -7,7 +7,7 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
 
 const mainTL = gsap.timeline();
 
-mainTL.from("")
+mainTL.from("soho", {duration:1})
 
 
 ;
