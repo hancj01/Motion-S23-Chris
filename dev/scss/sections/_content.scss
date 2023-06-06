@@ -1,4 +1,6 @@
 #content{
+    
+    background-color: #FED701;
     display: grid;
     grid-template-columns: auto 50% auto;
     grid-template-areas: 
@@ -13,7 +15,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // background-color: #F0F0F0;
         
 
         svg{

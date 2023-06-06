@@ -394,6 +394,7 @@ textarea {
     Footer
 ============= */
 #content {
+  background-color: #FED701;
   display: grid;
   grid-template-columns: auto 50% auto;
   grid-template-areas: ". . ." ". content ." ". . .";
