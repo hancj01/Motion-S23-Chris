@@ -16,7 +16,7 @@ function blocksAnimation(){
     tl.from("#soho", {duration:1, y:"-=500", ease: "expo.out"});
 
     //blocks split
-    tl.from("#o-1", {duration:0.5, x: "-=175", ease: "none" }, "move")
+    tl.from("#o-1", {duration:0.5, x: "-=175", ease: "none" }, "move+=.05")
     tl.from("#H", {duration:0.5, x: "-=345", ease: "none" },"move+=.05")
     tl.from("#o-2", {duration:0.5, x: "-=515", ease: "none" },"move+=.1")
 
