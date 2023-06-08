@@ -1,11 +1,10 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-// import { GSDevTools } from "gsap/GSDevTools";
+import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin,  MorphSVGPlugin);
-// GSDevTools,
+gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
 
 function glassesAnimation(){
     let tl = gsap.timeline();
@@ -68,8 +67,6 @@ function sparkleAnimation(){
 }
 
 
-//tl.from("#bottom-s-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "left" }, "grow")
-
 let mainTL = gsap.timeline();
 mainTL.add(glassesAnimation())
 mainTL.add(eyesAnimation())
@@ -78,4 +75,4 @@ mainTL.add(blinkAnimation(),"sparkle")
 mainTL.add(sparkleAnimation(),"sparkle")
 ;
 
-// GSDevTools.create();
+GSDevTools.create();
