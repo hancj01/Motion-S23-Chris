@@ -7,6 +7,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, MorphSVGPlugin);
 // GSDevTools, 
 
+
 function blocksAnimation(){
     let tl = gsap.timeline();
 
