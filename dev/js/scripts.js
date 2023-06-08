@@ -11,20 +11,21 @@ function blocksAnimation(){
     let tl = gsap.timeline();
 
     //entire logo comes down
-    tl.from("#soho", {duration:1, y:"-=900", ease: "expo.out"});
+    tl.from("#soho", {duration:1, y:"-=900", ease: "expo.out"})
 
     //blocks split
-    tl.from("#o-1", {duration:0.5, x: "-=175", ease: "none" }, "move")
-    tl.from("#H", {duration:0.5, x: "-=345", ease: "none" },"move+=.05")
-    tl.from("#o-2", {duration:0.5, x: "-=515", ease: "none" },"move+=.1")
+    .from("#o-1", {duration:0.5, x: "-=175", ease: "none" }, "move")
+    .from("#H", {duration:0.5, x: "-=345", ease: "none" },"move+=.05")
+    .from("#o-2", {duration:0.5, x: "-=515", ease: "none" },"move+=.1")
 
     //yellow blocks grow
-    tl.from("#bottom-s-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "left" }, "grow+=0.5")
-    tl.from("#top-s-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "right" }, "grow+=0.5")
-    tl.from("#o-1-block, #o-2-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "center" }, "grow+=0.5")
-    tl.from("#top-h-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "top" }, "grow+=0.5")    
-    tl.from("#bottom-h-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "bottom" }, "grow+=0.5")    
-
+    .from("#bottom-s-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "left" }, "grow+=0.5")
+    .from("#top-s-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "right" }, "grow+=0.5")
+    .from("#o-1-block, #o-2-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "center" }, "grow+=0.5")
+    .from("#top-h-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "top" }, "grow+=0.5")    
+    .from("#bottom-h-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "bottom" }, "grow+=0.5")    
+    
+    ;
 
     return tl;
 }
@@ -32,11 +33,12 @@ function blocksAnimation(){
 function splitAnimation(){
     let tl = gsap.timeline();
 
-    tl.from("#redefine", {duration:0.3, x: "-=400", ease: "none"}, "split+=0.5");
+    tl.from("#redefine", {duration:0.3, x: "-=400", ease: "none"}, "split+=0.5")
     
     //soho moves to the left
-    tl.from("#soho", {duration:0.3, x: 150, ease: "none" }, "split+=0.5")
+    .from("#soho", {duration:0.3, x: 150, ease: "none" }, "split+=0.5")
 
+    ;
     return tl;
 }
 
