@@ -48,6 +48,25 @@ function blinkAnimation(){
     return tl;
 }
 
+function sparkleAnimation(){
+    let tl = gsap.timeline();
+
+
+  tl.set("#right-sparkles, #left-sparkles", { opacity: 0 });
+
+  tl.fromTo(
+    "#right-sparkles",{ scale: 0, rotation: 0, transformOrigin: "center", x: "+=100" },
+    { scale: 1, opacity: 1, duration: 0.5, rotation: 360 }, "appear");
+
+  tl.fromTo(
+    "#left-sparkles", { scale: 0, rotation: 0, transformOrigin: "center", x: "-=100" },
+    { scale: 1, opacity: 1, duration: 0.5, rotation: 360 }, "appear");
+
+  tl.to("#right-sparkles, #left-sparkles", { opacity: 0, scale: 0, duration: 0.5, rotation: 540});
+
+    return tl;
+}
+
 
 //tl.from("#bottom-s-block", {duration: 0.2, scaleX:0, ease: "none", transformOrigin: "left" }, "grow")
 
@@ -55,7 +74,8 @@ let mainTL = gsap.timeline();
 mainTL.add(glassesAnimation())
 mainTL.add(eyesAnimation())
 mainTL.add(smileAnimation())
-mainTL.add(blinkAnimation())
+mainTL.add(blinkAnimation(),"sparkle")
+mainTL.add(sparkleAnimation(),"sparkle")
 ;
 
 GSDevTools.create();
