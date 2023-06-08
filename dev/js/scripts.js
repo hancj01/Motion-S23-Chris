@@ -1,11 +1,11 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
-
+gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, MorphSVGPlugin);
+// GSDevTools, 
 
 function blocksAnimation(){
     let tl = gsap.timeline();
@@ -51,4 +51,4 @@ mainTL.add(splitAnimation())
 
 ;
 
-GSDevTools.create();
+// GSDevTools.create();
