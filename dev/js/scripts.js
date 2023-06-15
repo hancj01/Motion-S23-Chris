@@ -105,12 +105,12 @@ let mainTL = gsap.timeline();
 mainTL.add(glassesAnimation())
 mainTL.add(eyesAnimation())
 mainTL.add(smileAnimation())
-mainTL.add(lookleftAnimation(),"up")
-mainTL.add(smileupAnimation(),"up")
+mainTL.add(lookleftAnimation(), "up")
+mainTL.add(smileupAnimation(), "up")
 mainTL.add(lookrightAnimation(), "down")
-mainTL.add(smiledownAnimation(),"down")
-mainTL.add(blinkAnimation(),"sparkle")
-mainTL.add(sparkleAnimation(),"sparkle")
+mainTL.add(smiledownAnimation(), "down")
+mainTL.add(blinkAnimation(), "sparkle")
+mainTL.add(sparkleAnimation(), "sparkle")
 ;
 
 GSDevTools.create();
