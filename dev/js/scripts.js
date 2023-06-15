@@ -11,8 +11,8 @@ gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, MorphSVGPlugin)
 function blocksAnimation(){
     let tl = gsap.timeline();
 
-    //entire logo comes down
-    tl.from("#soho", {duration:1, y:"-=900", ease: "expo.out"})
+    //entire logo comes down with transformation
+    tl.from("#soho", {duration:.75, y:"-=900", ease: "expo.out", scaleY: 2, transformOrigin: "top"})
 
     //blocks split
     .from("#o-1", {duration:0.5, x: "-=175", ease: "none" }, "move")
