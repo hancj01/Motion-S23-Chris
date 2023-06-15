@@ -47,10 +47,30 @@ function lookleftAnimation(){
   return tl;
 }
 
+function smileupAnimation(){
+  let tl = gsap.timeline();
+
+  gsap.set("#smile-all", { transformOrigin: "top" });
+
+  tl.to("#smile-all", { duration: 0.7, rotate: 10, delay: 0.3 });
+
+  return tl;
+}
+
 function lookrightAnimation(){
   let tl = gsap.timeline();
 
-  tl.to("#eyes", { x:0, duration: .5, ease: "power1.inOut"});
+  tl.to("#eyes", { x:0, duration: .7, ease: "power1.inOut"});
+  return tl;
+}
+
+function smiledownAnimation(){
+  let tl = gsap.timeline();
+
+  gsap.set("#smile-all", { transformOrigin: "top" });
+
+  tl.to("#smile-all", { duration: 0.7, rotate: 0, delay: 0.});
+
   return tl;
 }
 
@@ -85,8 +105,10 @@ let mainTL = gsap.timeline();
 mainTL.add(glassesAnimation())
 mainTL.add(eyesAnimation())
 mainTL.add(smileAnimation())
-mainTL.add(lookleftAnimation())
-mainTL.add(lookrightAnimation())
+mainTL.add(lookleftAnimation(),"up")
+mainTL.add(smileupAnimation(),"up")
+mainTL.add(lookrightAnimation(), "down")
+mainTL.add(smiledownAnimation(),"down")
 mainTL.add(blinkAnimation(),"sparkle")
 mainTL.add(sparkleAnimation(),"sparkle")
 ;
